@@ -1,0 +1,151 @@
+/*
+Estilo de pagina
+*/
+
+*{
+    margin: 0%;;
+    /*  Remove margens padrão de todos os elementos*/
+    padding: 0%;
+    /*  Remove nosso padding padrão*/
+    box-sizing: border-box;
+    /*  incluir borda e o padding no calculo de largura e altura*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*  Define a fonte padrão*/
+}
+
+body{
+    background-color: rgb(236, 243, 243);
+    /*  Define um fundo mais claro para a pagina*/
+    color: rgb(22, 10, 10);
+    /*  Define a cor do texto principal*/
+    line-height: 1.6;
+    /*  Define o espaçamento entre as linhas*/   
+
+}
+
+
+/*
+Cabeçalho e logo do site
+*/
+
+.logo{
+    width: 120px;
+    /* Reduzindo o tamanho do logotipo para melhorar a responsividade*/  
+    height: auto;
+    /* Asseguramos a proporção do logotipo*/  
+    display: block;
+    /*  Exibe logotipo como bloco*/  
+    margin: 10px;
+    /* Centralizar horizontalmente com espaçamento*/  
+
+}
+
+
+header{
+    background-image: url('../img/header.webp');
+    /*  Imagem de fundo*/  
+    background-size: cover;
+    /*  Cobrindo a area do cabeçalho*/     
+    background-position: center;
+    /*  Centraliza a imagem no cabeçalho*/  
+    color: #f6f6f6;
+    /*  Define a cor do texto*/  
+    padding: 60px 20px;
+    /*  Espaçamento interno*/  
+    text-align: center;
+    /*  Alinhar texto centro*/ 
+
+
+
+}
+
+nav{
+    display:flex;
+    /*  Usar flexbox pra organizar os links*/
+    justify-content: center;  
+    /*  Centralizar os links do na barra*/  
+    background-color: red;
+    /*  fundo menu */ 
+    Padding:10px;
+    /*  Espaçamento interno na navegação*/   
+
+
+}
+
+nav a{
+    color: white;
+    /*  Define a cor do menu*/  
+    text-decoration: none;
+    /*  Remove o sublinhado do texto padrão dos links*/  
+    margin: 5px 15px;
+    /*  Espaçamento hotizontal entre os links e vertical*/  
+
+
+
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+
+
+
+}
+
+.conteudo-principal{
+    flex: 3;
+    /*75% de largura*/
+    max-width: 75%;
+    /*limita conteudo a 75%*/  
+    padding: 20px;  
+
+}
+
+.sidebar{
+    flex: 1;
+    /*25% de largura*/
+    max-width: 25%;
+    /*limitar largura do sidebar*/
+    background-color: bisque;
+    /*fundo claro diferente branco*/
+    padding: 20px;
+    border-left: 2px solid rgb(226, 122,122);
+
+
+}
+
+
+/*Ajuste para telas menores*/
+
+@media(max-width:768){
+    main{
+        flex-direction: column;
+        /*empilha os elementos*/
+
+    }
+
+    .conteudo-principal,
+    .sidebar{
+        max-width: 100%;
+        /*Remove limitação da largura maxima*/
+
+
+    }
+
+
+}
+/*imagens do conteudo*/
+
+.imagem-principal,
+.imagem-sobre,
+.imagem-cardapio{
+    width: 100%;
+    /*imagem pra colocar toda a largura disponivel*/
+    height: auto;
+    /*Tamanho maximo e  evitar imagens muito grandes*/
+    margin: 20px 0;
+    /*espaçamento vertical*/
+    border-radius: 25px;
+    /*bordas arredondadas*/
+
+}
