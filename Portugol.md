@@ -24,3 +24,31 @@ INICIO
     soma <-num1+ num2 
     Escreva("A soma e :, soma")
 fim
+
+
+
+
+
+algoritimo "maioridade"
+var
+    idade:inteiro(int)
+
+inicio  
+    escreva("digite sua idade: ")
+    leia(idade)
+    se idade >= 18 então
+       escreva("vc e maior de idade infelizmente")
+    senao
+       escreva("voce e menor de idade ")
+       fimse
+fim
+
+algoritimo "contagem"
+var 
+    i:inteiro(int)
+inicio
+    i <- 1
+    enqunto i<- 10 faca 
+        escreva (i, "  ")
+    fimenquanto
+fim
